@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables globales */
+$color-principal: #212529;
+$color-secundario: #0d6efd;
+$color-texto: #f8f9fa;
+$radio-borde: 0.5rem;
+$altura-poster: 260px;
+
+/* Funciones modernas de color */
+@use "sass:color";
+
+/* Estilos globales */
+body {
+  padding-top: 56px;
+  background-color: color.adjust($color-principal, $lightness: 5%);
+  color: $color-texto;
+}
+
+.text-muted {
+  color: #efefed !important;
+}
+
+.movie-card {
+  cursor: pointer;
+  border-radius: $radio-borde;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .movie-poster {
+    height: $altura-poster;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h5 {
+      font-weight: bold;
+    }
+
+    .rating-badge {
+      font-size: 0.9rem;
+      background-color: $color-secundario;
+    }
+  }
+}
+
+.navbar {
+  background-color: $color-principal !important;
+
+  .navbar-brand {
+    color: $color-texto;
+    font-weight: bold;
+
+    &:hover {
+      color: color.adjust($color-texto, $lightness: 15%);
+    }
+  }
+
+  $propiedad-hover: "background-color";
+  &:hover {
+    #{$propiedad-hover}: color.adjust($color-principal, $lightness: -5%);
+  }
+}
+
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Generos */
+$generos: accion, drama, comedia, animacion, ciencia-ficcion;
+
+@each $g in $generos {
+  .badge-#{$g} {
+    background-color: color.mix($color-secundario, $color-principal, $weight: 60%);
+    text-transform: capitalize;
+  }
+}
