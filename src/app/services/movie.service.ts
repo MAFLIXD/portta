@@ -12,7 +12,7 @@ export class MovieService {
       description: 'Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos.',
       rating: 8.4,
       genre: 'accion',
-      poster: 'https://via.placeholder.com/300x450/007bff/ffffff?text=Avengers',
+      poster: 'https://image.tmdb.org/t/p/w300/or06FN3Dka5tukK1e9sl16pB3iy.jpg',
       year: 2019
     },
     {
@@ -21,7 +21,7 @@ export class MovieService {
       description: 'Dos hombres encarcelados se vinculan a lo largo de los años, encontrando consuelo y eventual redención a través de actos de decencia común.',
       rating: 9.3,
       genre: 'drama',
-      poster: 'https://via.placeholder.com/300x450/28a745/ffffff?text=Shawshank',
+      poster: 'https://image.tmdb.org/t/p/w300/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg',
       year: 1994
     },
     {
@@ -30,7 +30,7 @@ export class MovieService {
       description: 'Cuando el Joker causa estragos en Gotham City, Batman debe enfrentar uno de los mayores desafíos psicológicos y físicos.',
       rating: 9.0,
       genre: 'accion',
-      poster: 'https://via.placeholder.com/300x450/343a40/ffffff?text=Dark+Knight',
+      poster: 'https://image.tmdb.org/t/p/w300/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
       year: 2008
     },
     {
@@ -39,7 +39,7 @@ export class MovieService {
       description: 'Un ladrón que roba secretos corporativos through dream-sharing technology tiene la tarea inversa de plantar una idea en la mente de un CEO.',
       rating: 8.8,
       genre: 'ciencia-ficcion',
-      poster: 'https://via.placeholder.com/300x450/6f42c1/ffffff?text=Inception',
+      poster: 'https://image.tmdb.org/t/p/w300/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg',
       year: 2010
     },
     {
@@ -48,7 +48,7 @@ export class MovieService {
       description: 'Los juguetes de un niño cobran vida cuando los humanos no están presentes, liderados por el vaquero Woody y el astronauta Buzz Lightyear.',
       rating: 8.3,
       genre: 'animacion',
-      poster: 'https://via.placeholder.com/300x450/fd7e14/ffffff?text=Toy+Story',
+      poster: 'https://image.tmdb.org/t/p/w300/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg',
       year: 1995
     },
     {
@@ -57,7 +57,7 @@ export class MovieService {
       description: 'Dos amigos de secundaria intentan comprar alcohol para una fiesta para impresionar a sus compañeros de clase y ganar popularidad.',
       rating: 7.6,
       genre: 'comedia',
-      poster: 'https://via.placeholder.com/300x450/dc3545/ffffff?text=Superbad',
+      poster: 'https://image.tmdb.org/t/p/w300/ek8e8txUyUwd2BNqj6lFEerJQqF.jpg',
       year: 2007
     }
   ];
