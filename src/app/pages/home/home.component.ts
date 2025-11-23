@@ -13,7 +13,7 @@ import { MovieCardComponent } from '../../components/movie-card/movie-card.compo
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export default class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit {
   movies: Movie[] = [];
 
   constructor(private movieService: MovieService) { }
